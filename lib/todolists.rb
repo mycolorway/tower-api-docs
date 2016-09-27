@@ -1,7 +1,7 @@
 class Todolists
   include Swagger::Blocks
 
-  swagger_path '/projects/{team_id}/todolists' do
+  swagger_path '/projects/{project_id}/todolists' do
     operation :get do
       key :description, 'Returns todolists under specific project'
       key :tags, ['todolists']
