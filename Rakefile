@@ -1,10 +1,12 @@
 require 'swagger/blocks'
 require './lib/docs_root'
 require './lib/teams'
+require './lib/projects'
 
 SWAGGERED_CLASSES = [
   DocsRoot,
   Teams,
+  Projects,
 ].freeze
 
 task :build do
