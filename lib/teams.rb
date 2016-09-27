@@ -9,11 +9,22 @@ class Teams
         key :description, 'teams response'
       end
     end
+
+    operation :post do
+      key :description, 'Create a Team'
+      key :tags, ['teams']
+      parameter do
+        key :name, 'team[name]'
+        key :in, :formData
+        key :description, 'Team name'
+        key :required, true
+      end
+    end
   end
 
-  swagger_path '/teams/{id}/members' do
+  swagger_path '/teams/:id/members' do
     operation :get do
-      key :description, "Returns team by id"
+      key :description, 'Returns team by id'
       key :tags, ['teams']
       parameter do
         key :name, :id
@@ -28,5 +39,6 @@ class Teams
       end
     end
   end
+
 end
 
