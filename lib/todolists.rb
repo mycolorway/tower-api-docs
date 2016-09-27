@@ -22,7 +22,7 @@ class Todolists
       key :description, 'Create Todolist'
       key :tags, ['todolists']
       parameter do
-        key :name, :team_id
+        key :name, :project_id
         key :in, :path
         key :description, 'ID of Project'
         key :required, true
