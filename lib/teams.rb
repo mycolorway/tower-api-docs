@@ -37,8 +37,8 @@ class Teams
         key :format, :string
       end
       parameter do
-        key :name, 'team[name]'
-        key :in, :formData
+        key :name, :data
+        key :in, :body
         key :description, 'Team name'
         key :required, true
         key :type, :string
