@@ -4,6 +4,7 @@ class Projects
   swagger_path '/teams/{team_id}/projects' do
     operation :get do
       key :description, "Returns projects under specific team"
+      key :tags, ['projects']
       parameter do
         key :name, :team_id
         key :in, :path
