@@ -1,14 +1,14 @@
-class Todolists
+class Todos
   include Swagger::Blocks
 
-  swagger_path '/projects/{project_id}/todolists' do
+  swagger_path '/todolists/{todolist_id}/todos' do
     operation :get do
-      key :description, 'Returns todolists under specific project'
-      key :tags, ['todolists']
+      key :description, 'Returns todos under specific todolist'
+      key :tags, ['todos']
       parameter do
-        key :name, :project_id
+        key :name, :todolist_id
         key :in, :path
-        key :description, 'ID of project'
+        key :description, 'ID of Todolist'
         key :required, true
         key :type, :string
         key :format, :string
@@ -19,12 +19,12 @@ class Todolists
     end
 
     operation :post do
-      key :description, 'Create Todolist'
-      key :tags, ['todolists']
+      key :description, 'Create Todo'
+      key :tags, ['todos']
       parameter do
-        key :name, :project_id
+        key :name, :todolist_id
         key :in, :path
-        key :description, 'ID of Project'
+        key :description, 'ID of Todolist'
         key :required, true
         key :type, :string
         key :format, :string
@@ -32,20 +32,20 @@ class Todolists
       parameter do
         key :name, :data
         key :in, :body
-        key :description, 'Todolist information'
+        key :description, 'Todo information'
         key :required, true
       end
     end
   end
 
-  swagger_path '/todolists/{id}' do
+  swagger_path '/todos/{id}' do
     operation :get do
-      key :description, 'Get todolist by id'
-      key :tags, ['todolists']
+      key :description, 'Get todo by id'
+      key :tags, ['todos']
       parameter do
         key :name, :id
         key :in, :path
-        key :description, 'ID of Todolist'
+        key :description, 'ID of Todo'
         key :required, true
         key :type, :string
         key :format, :string
@@ -53,12 +53,12 @@ class Todolists
     end
 
     operation :patch do
-      key :description, 'Update todolist by id'
-      key :tags, ['todolists']
+      key :description, 'Update todo by id'
+      key :tags, ['todos']
       parameter do
         key :name, :id
         key :in, :path
-        key :description, 'ID of Todolist'
+        key :description, 'ID of Todo'
         key :required, true
         key :type, :string
         key :format, :string
@@ -66,18 +66,18 @@ class Todolists
       parameter do
         key :name, :data
         key :in, :body
-        key :description, 'Todolist information'
+        key :description, 'Todo information'
         key :required, true
       end
     end
 
     operation :delete do
-      key :description, 'Delete todolist by id'
-      key :tags, ['todolists']
+      key :description, 'Delete todo by id'
+      key :tags, ['todos']
       parameter do
         key :name, :id
         key :in, :path
-        key :description, 'ID of Todolist'
+        key :description, 'ID of Todo'
         key :required, true
         key :type, :string
         key :format, :string

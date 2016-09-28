@@ -66,4 +66,3 @@ class Teams
   end
 
 end
-

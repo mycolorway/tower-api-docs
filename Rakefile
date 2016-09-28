@@ -3,12 +3,14 @@ require './lib/docs_root'
 require './lib/teams'
 require './lib/projects'
 require './lib/todolists'
+require './lib/todos'
 
 SWAGGERED_CLASSES = [
   DocsRoot,
   Teams,
   Projects,
   Todolists,
+  Todos,
 ].freeze
 
 task :build do

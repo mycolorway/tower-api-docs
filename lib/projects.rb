@@ -85,5 +85,3 @@ class Projects
     end
   end
 end
-
-
