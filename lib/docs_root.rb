@@ -27,7 +27,7 @@ API 支持 Refresh Token
       key :type, :oauth2
       key :authorizationUrl, 'https://beta99.tower.im/oauth/authorize'
       key :tokenUrl, 'https://apibeta99.tower.im/oauth/token'
-      key :flow, 'authorization_code'
+      key :flow, 'accessCode'
     end
   end
 end
