@@ -84,4 +84,74 @@ class Todos
       end
     end
   end
+
+  swagger_path '/todos/{id}/completion' do
+    operation :post do
+      key :description, 'complete todo by id'
+      key :tags, ['todos']
+      parameter do
+        key :name, :id
+        key :in, :path
+        key :description, 'ID of Todo'
+        key :required, true
+        key :type, :string
+        key :format, :string
+      end
+    end
+
+    operation :delete do
+      key :description, 'reopen todo by id'
+      key :tags, ['todos']
+      parameter do
+        key :name, :id
+        key :in, :path
+        key :description, 'ID of Todo'
+        key :required, true
+        key :type, :string
+        key :format, :string
+      end
+    end
+  end
+
+  swagger_path '/todos/{id}/due' do
+    operation :patch do
+      key :description, 'set due of todo by id'
+      key :tags, ['todos']
+      parameter do
+        key :name, :id
+        key :in, :path
+        key :description, 'ID of Todo'
+        key :required, true
+        key :type, :string
+        key :format, :string
+      end
+      parameter do
+        key :name, :data
+        key :in, :body
+        key :description, 'Todo due information'
+        key :required, true
+      end
+    end
+  end
+
+  swagger_path '/todos/{id}/assignment' do
+    operation :patch do
+      key :description, 'set assignee of todo by id'
+      key :tags, ['todos']
+      parameter do
+        key :name, :id
+        key :in, :path
+        key :description, 'ID of Todo'
+        key :required, true
+        key :type, :string
+        key :format, :string
+      end
+      parameter do
+        key :name, :data
+        key :in, :body
+        key :description, 'Todo assignee information'
+        key :required, true
+      end
+    end
+  end
 end
