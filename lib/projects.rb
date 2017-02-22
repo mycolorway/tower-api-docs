@@ -32,7 +32,7 @@ class Projects
       parameter do
         key :name, :data
         key :in, :body
-        key :description, 'Project information'
+        key :description, '{"project": {"name": "project name", "desc": "project desc"}}'
         key :required, true
       end
     end
@@ -66,7 +66,7 @@ class Projects
       parameter do
         key :name, :data
         key :in, :body
-        key :description, 'Project information'
+        key :description, '{"project": {"name": "project name", "desc": "project desc"}}'
         key :required, true
       end
     end
