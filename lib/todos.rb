@@ -33,7 +33,6 @@ class Todos
         key :name, :data
         key :in, :body
         key :description, '{"todo": {"content": "todo content", "desc": "todo desc"}}'
-        key :description, 'Todo information'
         key :required, true
       end
     end
