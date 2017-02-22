@@ -32,7 +32,7 @@ class Todolists
       parameter do
         key :name, :data
         key :in, :body
-        key :description, 'Todolist information'
+        key :description, '{"todolist": {"name": "todolist name"}}'
         key :required, true
       end
     end
@@ -66,7 +66,7 @@ class Todolists
       parameter do
         key :name, :data
         key :in, :body
-        key :description, 'Todolist information'
+        key :description, '{"todolist": {"name": "todolist name"}}'
         key :required, true
       end
     end
