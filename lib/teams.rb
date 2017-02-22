@@ -16,7 +16,7 @@ class Teams
       parameter do
         key :name, :data
         key :in, :body
-        key :description, 'Team name'
+        key :description, '{"team": {"name": "team name"}}'
         key :required, true
         key :type, :string
         key :format, :string
@@ -39,7 +39,7 @@ class Teams
       parameter do
         key :name, :data
         key :in, :body
-        key :description, 'Team name'
+        key :description, '{"team": {"name": "team name"}}'
         key :required, true
         key :type, :string
         key :format, :string
