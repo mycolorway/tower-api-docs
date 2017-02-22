@@ -32,6 +32,7 @@ class Todos
       parameter do
         key :name, :data
         key :in, :body
+        key :description, '{"todo": {"content": "todo content", "desc": "todo desc"}}'
         key :description, 'Todo information'
         key :required, true
       end
@@ -66,7 +67,7 @@ class Todos
       parameter do
         key :name, :data
         key :in, :body
-        key :description, 'Todo information'
+        key :description, '{"todo": {"content": "todo content", "desc": "todo desc"}}'
         key :required, true
       end
     end
@@ -128,7 +129,7 @@ class Todos
       parameter do
         key :name, :data
         key :in, :body
-        key :description, 'Todo due information'
+        key :description, '{ "todos_due": { "due_at": "2017-02-08" } }'
         key :required, true
       end
     end
@@ -149,7 +150,7 @@ class Todos
       parameter do
         key :name, :data
         key :in, :body
-        key :description, 'Todo assignee information'
+        key :description, '{ "todos_assignment": { "assignee_id": "assignee guid" } }'
         key :required, true
       end
     end
@@ -170,7 +171,7 @@ class Todos
       parameter do
         key :name, :data
         key :in, :body
-        key :description, 'Todo comment'
+        key :description, '{ "todos_comment": { "content": "hello" } }'
         key :required, true
       end
     end
