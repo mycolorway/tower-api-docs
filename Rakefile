@@ -5,6 +5,7 @@ require './lib/projects'
 require './lib/todolists'
 require './lib/todos'
 require './lib/members'
+require './lib/user'
 
 SWAGGERED_CLASSES = [
   DocsRoot,
@@ -12,7 +13,8 @@ SWAGGERED_CLASSES = [
   Projects,
   Todolists,
   Todos,
-  Members
+  Members,
+  User
 ].freeze
 
 task :build do
