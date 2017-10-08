@@ -34,6 +34,7 @@ class Projects
         key :in, :body
         key :description, '{"project": {"name": "project name", "desc": "project desc"}}'
         key :required, true
+        schema { key :'$ref', :Placeholder }
       end
       response 200 do
         key :description, '# TODO'
@@ -74,6 +75,7 @@ class Projects
         key :in, :body
         key :description, '{"project": {"name": "project name", "desc": "project desc"}}'
         key :required, true
+        schema { key :'$ref', :Placeholder }
       end
       response 200 do
         key :description, '# TODO'

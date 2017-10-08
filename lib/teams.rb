@@ -18,8 +18,7 @@ class Teams
         key :in, :body
         key :description, '{"team": {"name": "team name"}}'
         key :required, true
-        key :type, :string
-        key :format, :string
+        schema { key :'$ref', :Placeholder }
       end
       response 200 do
         key :description, '# TODO'
@@ -44,8 +43,7 @@ class Teams
         key :in, :body
         key :description, '{"team": {"name": "team name"}}'
         key :required, true
-        key :type, :string
-        key :format, :string
+        schema { key :'$ref', :Placeholder }
       end
       response 200 do
         key :description, '# TODO'

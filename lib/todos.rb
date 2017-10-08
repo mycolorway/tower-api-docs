@@ -34,6 +34,7 @@ class Todos
         key :in, :body
         key :description, '{"todo": {"content": "todo content", "desc": "todo desc"}}'
         key :required, true
+        schema { key :'$ref', :Placeholder }
       end
       response 200 do
         key :description, '# TODO'
@@ -74,6 +75,7 @@ class Todos
         key :in, :body
         key :description, '{"todo": {"content": "todo content", "desc": "todo desc"}}'
         key :required, true
+        schema { key :'$ref', :Placeholder }
       end
       response 200 do
         key :description, '# TODO'
@@ -148,6 +150,7 @@ class Todos
         key :in, :body
         key :description, '{ "todos_due": { "due_at": "2017-02-08" } }'
         key :required, true
+        schema { key :'$ref', :Placeholder }
       end
       response 200 do
         key :description, '# TODO'
@@ -172,6 +175,7 @@ class Todos
         key :in, :body
         key :description, '{ "todos_assignment": { "assignee_id": "assignee guid" } }'
         key :required, true
+        schema { key :'$ref', :Placeholder }
       end
       response 200 do
         key :description, '# TODO'
@@ -196,6 +200,7 @@ class Todos
         key :in, :body
         key :description, '{ "todos_comment": { "content": "hello" } }'
         key :required, true
+        schema { key :'$ref', :Placeholder }
       end
       response 200 do
         key :description, '# TODO'

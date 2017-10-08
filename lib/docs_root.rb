@@ -30,4 +30,7 @@ API 支持 Refresh Token
       key :flow, 'accessCode'
     end
   end
+
+  swagger_schema :Placeholder do
+  end
 end

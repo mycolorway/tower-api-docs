@@ -34,6 +34,7 @@ class Todolists
         key :in, :body
         key :description, '{"todolist": {"name": "todolist name"}}'
         key :required, true
+        schema { key :'$ref', :Placeholder }
       end
       response 200 do
         key :description, '# TODO'
@@ -74,6 +75,7 @@ class Todolists
         key :in, :body
         key :description, '{"todolist": {"name": "todolist name"}}'
         key :required, true
+        schema { key :'$ref', :Placeholder }
       end
       response 200 do
         key :description, '# TODO'
