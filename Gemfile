@@ -1,3 +1,4 @@
 source 'https://rubygems.org'
 
-gem 'swagger-blocks'
+gem 'rake', '~> 12.0.0'
+gem 'swagger-blocks', '~> 1.3.4'
