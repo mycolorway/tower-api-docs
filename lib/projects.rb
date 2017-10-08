@@ -35,6 +35,9 @@ class Projects
         key :description, '{"project": {"name": "project name", "desc": "project desc"}}'
         key :required, true
       end
+      response 200 do
+        key :description, '# TODO'
+      end
     end
   end
 
@@ -49,6 +52,9 @@ class Projects
         key :required, true
         key :type, :string
         key :format, :string
+      end
+      response 200 do
+        key :description, '# TODO'
       end
     end
 
@@ -69,6 +75,9 @@ class Projects
         key :description, '{"project": {"name": "project name", "desc": "project desc"}}'
         key :required, true
       end
+      response 200 do
+        key :description, '# TODO'
+      end
     end
 
     operation :delete do
@@ -81,6 +90,9 @@ class Projects
         key :required, true
         key :type, :string
         key :format, :string
+      end
+      response 200 do
+        key :description, '# TODO'
       end
     end
   end

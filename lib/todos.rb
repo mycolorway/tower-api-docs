@@ -35,6 +35,9 @@ class Todos
         key :description, '{"todo": {"content": "todo content", "desc": "todo desc"}}'
         key :required, true
       end
+      response 200 do
+        key :description, '# TODO'
+      end
     end
   end
 
@@ -49,6 +52,9 @@ class Todos
         key :required, true
         key :type, :string
         key :format, :string
+      end
+      response 200 do
+        key :description, '# TODO'
       end
     end
 
@@ -69,6 +75,9 @@ class Todos
         key :description, '{"todo": {"content": "todo content", "desc": "todo desc"}}'
         key :required, true
       end
+      response 200 do
+        key :description, '# TODO'
+      end
     end
 
     operation :delete do
@@ -81,6 +90,9 @@ class Todos
         key :required, true
         key :type, :string
         key :format, :string
+      end
+      response 200 do
+        key :description, '# TODO'
       end
     end
   end
@@ -97,6 +109,9 @@ class Todos
         key :type, :string
         key :format, :string
       end
+      response 200 do
+        key :description, '# TODO'
+      end
     end
 
     operation :delete do
@@ -109,6 +124,9 @@ class Todos
         key :required, true
         key :type, :string
         key :format, :string
+      end
+      response 200 do
+        key :description, '# TODO'
       end
     end
   end
@@ -131,6 +149,9 @@ class Todos
         key :description, '{ "todos_due": { "due_at": "2017-02-08" } }'
         key :required, true
       end
+      response 200 do
+        key :description, '# TODO'
+      end
     end
   end
 
@@ -152,6 +173,9 @@ class Todos
         key :description, '{ "todos_assignment": { "assignee_id": "assignee guid" } }'
         key :required, true
       end
+      response 200 do
+        key :description, '# TODO'
+      end
     end
   end
 
@@ -172,6 +196,9 @@ class Todos
         key :in, :body
         key :description, '{ "todos_comment": { "content": "hello" } }'
         key :required, true
+      end
+      response 200 do
+        key :description, '# TODO'
       end
     end
   end

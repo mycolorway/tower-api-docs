@@ -21,6 +21,9 @@ class Teams
         key :type, :string
         key :format, :string
       end
+      response 200 do
+        key :description, '# TODO'
+      end
     end
   end
 
@@ -43,6 +46,9 @@ class Teams
         key :required, true
         key :type, :string
         key :format, :string
+      end
+      response 200 do
+        key :description, '# TODO'
       end
     end
   end
