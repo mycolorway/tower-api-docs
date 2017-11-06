@@ -16,12 +16,9 @@ class DocsRoot
 
 API 使用 OAuth2 Authorization Code flow 进行认证，Authorization Server 地址为 https://tower.im ，endpoints 见[这里](https://github.com/doorkeeper-gem/doorkeeper/wiki/API-endpoint-descriptions-and-examples)。
 
-如何进行 OAuth2 认证请参考
-
-[这里](https://github.com/doorkeeper-gem/doorkeeper/wiki/Testing-your-provider-with-OAuth2-gem)
-以及 [OAuth2 Spec](https://tools.ietf.org/html/rfc6749)
-
 API 支持 Refresh Token
+
+如何进行 OAuth2 认证请参考 [Using OAuth 2.0 to Access Google APIs](https://developers.google.com/identity/protocols/OAuth2) 以及 [OAuth2 Spec](https://tools.ietf.org/html/rfc6749)
         "
     end
 
