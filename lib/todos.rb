@@ -173,9 +173,27 @@ class Todos
       parameter do
         key :name, :data
         key :in, :body
-        key :description, '{ "todos_assignment": { "assignee_id": "assignee guid" } }'
+        key :description, '{ "todos_assignment": { "assignee_id": "assignee guid or leave this empty to unassign" } }'
         key :required, true
         schema { key :'$ref', :Placeholder }
+      end
+      response 200 do
+        key :description, '# TODO'
+      end
+    end
+  end
+
+  swagger_path '/todos/{id}/assignment' do
+    operation :delete do
+      key :description, 'unassign todo by id'
+      key :tags, ['todo']
+      parameter do
+        key :name, :id
+        key :in, :path
+        key :description, 'ID of todo'
+        key :required, true
+        key :type, :string
+        key :format, :string
       end
       response 200 do
         key :description, '# TODO'
