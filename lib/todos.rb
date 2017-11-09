@@ -173,7 +173,7 @@ class Todos
       parameter do
         key :name, :data
         key :in, :body
-        key :description, '{ "todos_assignment": { "assignee_id": "assignee guid or leave this empty to unassign" } }'
+        key :description, '{ "todos_assignment": { "assignee_id": "assignee guid" } }'
         key :required, true
         schema { key :'$ref', :Placeholder }
       end
