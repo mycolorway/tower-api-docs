@@ -186,7 +186,7 @@ class Todos
   swagger_path '/todos/{id}/assignment' do
     operation :delete do
       key :description, 'unassign todo by id'
-      key :tags, ['todo']
+      key :tags, ['todos']
       parameter do
         key :name, :id
         key :in, :path
